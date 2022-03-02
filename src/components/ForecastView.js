@@ -1,10 +1,8 @@
-import Fallback from "./Fallback";
 import Tabnav from "./Tabnav";
 
 export default function ForecastView({ forecast, name }) {
   return (
     <main>
-      {!forecast && <Fallback />}
       {forecast && (
         <>
           <h2>{name}</h2>
